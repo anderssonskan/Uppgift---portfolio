@@ -33,11 +33,9 @@ body {
     position: fixed;
     background-color: rgb(124, 150, 159);
     width: 100%;
-    display: block;
-    
 }
 
-ul{
+.navbarlist{
     list-style-type: none;
     margin: 15px 0;
     padding: 0;
@@ -58,26 +56,43 @@ ul{
     text-align: center;
 }
 
-.content {
+.content, .contact {
     display: flex;
+    height: 50vh;
+}
+
+.content {
+  margin: 30px;
+}
+
+.skills-container {
+    display: flex;
+    border-right: 2px solid gray;
+    width: 75%;
+    height: 350px;
+    background-color: lightgray;
+}
+
+.yrken, .studier, .merit {
+    padding: 10px;
+}
+
+.yrken-list, .studier-list, .merit-list {
+    padding: 10px;
+    border-left: 1px solid lightgrey;
+    list-style-type: circle;
+}
+
+.portfolio {
+    width: 100%;
     height: 100vh;
-}
-
-.skills{
-    width: 80%;
-    border-right: 1px solid lightgray;
-    padding: 30px;
-}
-
-#portfolio {
-    position: absolute;
-
+    border-top: 1px solid gray;
 }
 
 .contact {
-    width: 20%;
-    padding: 30px;
-    margin: 10px;
+    margin: 30px;
+    width: 25%;
+    height: 350px;
 }
 
 .social:hover {
@@ -89,6 +104,10 @@ ul{
     width: 40px;
     padding: 15px;
     margin: 2px;
+}
+
+.skills, .port {
+    margin: 30px 30px;
 }
 
 
